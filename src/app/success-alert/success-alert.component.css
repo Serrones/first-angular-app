@@ -1,0 +1,12 @@
+p {
+    padding: 20px;
+    text-align: center;
+    color: green;
+    border: 1px solid darkgreen;
+}
+
+h5 {
+    padding: 10px;
+    background-color: orange;
+    color: darkgreen;
+}
