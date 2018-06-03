@@ -15,7 +15,9 @@ export class ServersComponent implements OnInit {
     userNameStatus = '';
     userName = '';
     serverCreated = false;
-    servers = ['TestServer1', 'TestServer2']
+    servers = ['TestServer1', 'TestServer2'];
+    showSecret = false;
+    log = [];
 
   constructor() {
       setTimeout(() => {
@@ -37,4 +39,8 @@ export class ServersComponent implements OnInit {
   onCreateUsername() {
       this.userNameStatus = 'Username created! Welcome ' + this.userName;
      }
+  onToggleDetails() {
+      this.showSecret = !this.showSecret;
+      this.log.push(this.log.length + 1);
+ }
 }
