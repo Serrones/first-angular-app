@@ -31,8 +31,6 @@
     (click)="onCreateUsername()">Create Username</button>
 <p>{{ userNameStatus }}</p>
 <hr>
-<app-server></app-server>
-<hr>
 <app-warning-alert></app-warning-alert>
 <hr>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
